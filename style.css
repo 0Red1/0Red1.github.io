@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+}
+
+body {
+    background-color: #101414;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    border-top: 2px solid white;
+    padding-top: 20px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.btnNav {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btnNav:hover {
+    color: red;
+}
+
+.infoBar {
+    background: linear-gradient(90deg, #210d0e, #700606);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3rem;
+}
+
+.infoBar h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.infoBar p {
+    font-size: 20px;
+}
+
+.titre {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 5px solid red;
+    padding: 0px 0px 10px 0px;
+}
+
+.presentation, .projets {
+    margin: 80px 270px;
+}
+
+.presentation p, .projets p {
+    font-size: 20px;
+    padding-top: 30px;
+}
