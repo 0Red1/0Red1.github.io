@@ -15,6 +15,7 @@ footer {
     text-align: center;
     border-top: 2px solid white;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .logo {
@@ -68,11 +69,46 @@ nav ul {
     padding: 0px 0px 10px 0px;
 }
 
-.presentation, .projets {
+.presentation, .projects {
     margin: 80px 270px;
 }
 
-.presentation p, .projets p {
+.presentation p, .projects p {
     font-size: 20px;
     padding-top: 30px;
+}
+
+.projects-box {
+    border: 2px solid white;
+    margin-top: 50px;
+}
+
+.project-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.tag {
+    background-color: #700606;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.project-desc {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 10px;
+}
+
+.project-img {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+img {
+    max-width: 70%;
+    height: auto;
 }
