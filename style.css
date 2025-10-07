@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -9,6 +10,7 @@ header {
 body {
     background-color: #101414;
     color: white;
+    padding-top: 50px;
 }
 
 footer {
@@ -20,13 +22,19 @@ footer {
 
 .logo {
     height: 50px;
-    width: auto;
+    width: 94px;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #101414;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 nav ul {
@@ -69,6 +77,10 @@ nav ul {
     padding: 0px 0px 10px 0px;
 }
 
+.presentation {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .presentation, .projects {
     margin: 80px 270px;
 }
@@ -81,6 +93,7 @@ nav ul {
 .projects-box {
     border: 2px solid white;
     margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .project-banner {
@@ -111,4 +124,22 @@ nav ul {
 img {
     max-width: 70%;
     height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#accueil, #projects {
+    scroll-margin-top: 100px;
+}
+
+.logoBtn {
+    margin: 0px 10px;
+    text-decoration: none;
+}
+
+.logoBtn img {
+    height: 50px;
+    width: auto;
 }

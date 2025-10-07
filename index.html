@@ -11,15 +11,17 @@
 <body>
     <header>
         <nav>
-            <img src="images/LogoCodeStyleWhite.png" alt="Logo Red version blanc" class="logo">
+            <a href="index.html" class="logo">
+                <img src="images/LogoCodeStyleWhite.png" alt="Logo Red version blanc" class="logo">
+            </a>
             <ul>
-                <li><a href="index.html" class="btnNav">Accueil</a></li>
-                <li><a href="" class="btnNav">Projets</a></li>
+                <li><a href="#accueil" class="btnNav">Accueil</a></li>
+                <li><a href="#projects" class="btnNav">Projets</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="infoBar">
+    <section id="accueil" class="infoBar">
         <h1>Romain Lenson</h1>
         <p>Étudiant en Game Dev – Recherche une alternance</p>
     </section>
@@ -33,7 +35,7 @@
         </p>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
         <h1 class="titre">Mes projets</h1>
 
         <div class="projects-box">
@@ -73,8 +75,13 @@
 
     <footer>
         <div>Contact : lenson.romain@gmail.com</div>
-        <a href="http://www.linkedin.com/in/romain-lenson">Linkedin</a>
-        <a href="https://github.com/0Red1">Github</a> 
+        <a href="http://www.linkedin.com/in/romain-lenson" class="logoBtn">
+            <img src="images/Logo-Linkedin.png" alt="Linkedin">
+        </a>
+
+        <a href="https://github.com/0Red1" class="logoBtn">
+            <img src="images/Logo-Github.png" alt="Github">
+        </a> 
     </footer>
 </body>
 
