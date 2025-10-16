@@ -20,6 +20,14 @@ footer {
     padding-bottom: 20px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+#accueil, #projects {
+    scroll-margin-top: 100px;
+}
+
 .logo {
     height: 50px;
     width: 94px;
@@ -110,9 +118,16 @@ nav ul {
 }
 
 .project-desc {
-    border-top: 2px solid white;
     border-bottom: 2px solid white;
     padding: 10px;
+}
+
+.project-desc::before {
+    content: "";
+    display: block;
+    width: 99%;
+    margin: 5px auto 0;
+    border-top: 2px solid white;
 }
 
 .project-img {
@@ -126,12 +141,18 @@ img {
     height: auto;
 }
 
-html {
-    scroll-behavior: smooth;
+.project-btn { /* div pour pouvoir placer mon btn pour test le jeu */
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
 }
 
-#accueil, #projects {
-    scroll-margin-top: 100px;
+.playBtn {
+    background-color: #700606;
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 10px;
 }
 
 .logoBtn {
