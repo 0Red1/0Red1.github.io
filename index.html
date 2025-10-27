@@ -28,10 +28,11 @@
 
     <section class="presentation">
         <h1 class="titre">Présentation</h1>
-        <p>Passionné par le développement de jeux vidéo,
-            je suis actuellement en formation et je recherche une alternance en contrat d'apprentissage pour mettre mes compétences en
-            pratique.
-            Curieux, motivé et rigoureux, je suis toujours prêt à apprendre et relever de nouveaux défis.
+        <p>
+            Passionné par le développement de jeux vidéo, je suis actuellement en formation et je recherche une
+            alternance en contrat d'apprentissage pour mettre mes
+            compétences en pratique. Curieux, motivé et rigoureux, je suis toujours prêt à apprendre et relever de
+            nouveaux défis.
         </p>
     </section>
 
@@ -49,14 +50,52 @@
                 <p>Jeu fais lors d'une GameJam de 48h avec pour thème le chiffre 1.</p>
             </div>
 
-            <div class="project-img">
-                <img src="images/Number One Screen 1.png" alt="Capture d'écran n°1 de Number One">
-                <!--<img src="images/Number One Screen 2.png" alt="Capture d'écran n°2 de Number One">-->
-                <!--<img src="images/Number One Screen 3.png" alt="Capture d'écran n°3 de Number One">-->
+            <div class="carousel-container">
+                <div class="project-img active">
+                    <img src="images/Number One Screen 1.png" alt="Capture d'écran n°1 de Number One">
+                </div>
+
+                <div class="project-img">
+                    <img src="images/Number One Screen 2.png" alt="Capture d'écran n°2 de Number One">
+                </div>
+
+                <div class="project-img">
+                    <img src="images/Number One Screen 3.png" alt="Capture d'écran n°3 de Number One">
+                </div>
+
+
+                <button class="prev-btn">❮</button>
+                <button class="next-btn">❯</button>
             </div>
 
             <div class="project-btn">
                 <a href="https://0red.itch.io/number-one" class="playBtn">Jouer</a>
+            </div>
+        </div>
+
+        <div class="projects-box">
+
+            <div class="project-banner">
+                <h2>2 Colors</h2>
+                <span class="tag">Unity</span>
+            </div>
+
+            <div class="project-desc">
+                <p>Jeu fais lors d'une GameJam de 6h avec pour thème 2 couleurs.
+                </p>
+            </div>
+
+            <div class="carousel-container">
+                <div class="project-img active">
+                    <img src="images/2 Colors Screen.png" alt="Capture d'écran de 2 Colors">
+                </div>
+
+                <button class="prev-btn">❮</button>
+                <button class="next-btn">❯</button>
+            </div>
+
+            <div class="project-btn">
+                <a href="https://0red.itch.io/2-colors" class="playBtn">Jouer</a>
             </div>
         </div>
 
@@ -73,30 +112,14 @@
                 </p>
             </div>
 
-            <div class="project-img">
-                <img src="images/Humania SkinChangeSystem.png"
-                    alt="Capture d'écran du système de changement de skin de Humania">
-            </div>
-        </div>
+            <div class="carousel-container">
+                <div class="project-img active">
+                    <img src="images/Humania SkinChangeSystem.png"
+                        alt="Capture d'écran du système de changement de skin de Humania">
+                </div>
 
-        <div class="projects-box">
-
-            <div class="project-banner">
-                <h2>2 Colors</h2>
-                <span class="tag">Unity</span>
-            </div>
-
-            <div class="project-desc">
-                <p>Jeu fais lors d'une GameJam de 6h avec pour thème 2 couleurs.
-                </p>
-            </div>
-
-            <div class="project-img">
-                <img src="images/2 Colors Screen.png" alt="Capture d'écran de 2 Colors">
-            </div>
-
-            <div class="project-btn">
-                <a href="https://0red.itch.io/2-colors" class="playBtn">Jouer</a>
+                <button class="prev-btn">❮</button>
+                <button class="next-btn">❯</button>
             </div>
         </div>
     </section>
@@ -111,6 +134,8 @@
             <img src="images/Logo-Github.png" alt="Github">
         </a>
     </footer>
+
+    <script src="carousel.js"></script>
 </body>
 
 </html>
