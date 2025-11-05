@@ -192,3 +192,20 @@ img {
     width: auto;
     margin-top: 20px;
 }
+
+
+
+@media screen and (max-width: 960px) {
+
+    nav {
+        z-index: 1000;
+        background-color: #1a2121;
+    }
+
+    .presentation, .projects {
+        width: 95%;
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
