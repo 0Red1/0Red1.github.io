@@ -1,7 +1,7 @@
 const carousels = document.querySelectorAll('.carousel-container');
 
 carousels.forEach(carousel => {
-    const items = carousel.querySelectorAll('.project-img');
+    const items = carousel.querySelectorAll('.contents');
     const prevBtn = carousel.querySelector('.prev-btn');
     const nextBtn = carousel.querySelector('.next-btn');
 

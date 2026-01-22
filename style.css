@@ -43,6 +43,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 9999;
 }
 
 nav ul {
@@ -130,13 +131,24 @@ nav ul {
     border-top: 2px solid white;
 }
 
-.project-img.active{
+.project-desc p{
+    font-size: 17px;
+}
+
+.contents.active{
     display: flex;
     justify-content: center;
     padding: 10px;
 }
 
-.project-img {
+video{
+    width: 99%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contents {
     display: none;
 }
 
