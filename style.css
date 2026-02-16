@@ -120,6 +120,8 @@ nav ul {
 }
 
 .project-desc {
+    display: flex;
+    flex-direction: column;
     border-bottom: 2px solid white;
     padding: 10px;
 }
@@ -134,6 +136,10 @@ nav ul {
 
 .project-desc p{
     font-size: 17px;
+}
+
+.project-desc ul{
+    margin-top: 10px;
 }
 
 .contents.active{
@@ -175,10 +181,76 @@ img {
 
 .prev-btn {
     left: 10px;
+    border-top: none;
+    border-left: 2px solid red;
+    border-right: none;
+    border-bottom: none;
 }
 
 .next-btn {
     right: 10px;
+    border-top: none;
+    border-left: none;
+    border-right:2px solid red;
+    border-bottom: none;
+}
+
+.pop-up.active{
+    display: flex;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    background-color:rgba(0, 0, 0, 0); /*je le laisse a 0 volontairement pour des tests*/
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up{
+    display: none;
+}
+
+.pop-up-content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    width: 400px;
+    height: 250px;
+    padding-left: 40px;
+
+    margin-left: 450px;
+
+    background-color: #101414;
+    border : 2px solid red;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.show-pop-up-btn{
+    align-self: flex-end;
+    right: 15px;
+    color: white;
+    background-color: #700606;
+    border: none;
+}
+
+.pop-up-content .hide-pop-up-btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    outline: none;
 }
 
 .project-btn { /* div pour pouvoir placer mon btn pour test le jeu */
@@ -220,6 +292,14 @@ img {
         margin: auto;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+
+    .pop-up-content{
+        margin: 0;
+    }
+
+    .pop-up.active{
+        background-color:rgba(0, 0, 0, 0.8);
     }
 
     .project-btn {
